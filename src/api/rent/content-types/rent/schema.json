@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rents",
+  "info": {
+    "singularName": "rent",
+    "pluralName": "rents",
+    "displayName": "Rent",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "car": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::car.car"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "Kilometre": {
+      "type": "decimal",
+      "required": true
+    }
+  }
+}

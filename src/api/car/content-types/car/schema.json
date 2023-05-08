@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cars",
+  "info": {
+    "singularName": "car",
+    "pluralName": "cars",
+    "displayName": "Car"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Model": {
+      "type": "string",
+      "required": true
+    },
+    "Year": {
+      "type": "integer",
+      "required": true
+    },
+    "Cover": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "Manufacturer": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
